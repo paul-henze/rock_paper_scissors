@@ -3,7 +3,7 @@ def menu():
     while True:
         print("=========================","\n   Rock Paper Scissors","\n=========================")
         print("1)  ✊","\n2)  ✋","\n3)  ✌️")
-        #Made a While case here so everytime the input is not 1,2 or 3, a error message will appear
+        #Made a While loop here so everytime the input is not 1,2 or 3, a error message will appear
         while True:
             try:
                 player = int(input("Pick a number: "))
@@ -17,7 +17,7 @@ def menu():
 
         print()
         computer = random.randint(1,3)       
-        #if case for stone
+        #if statement for stone
         if  player == 1 and computer == 1:
             print("You chose: ✊","\nCPU chose: ✊","\nIt is a draw!")
         elif player == 1 and computer == 2:
@@ -25,7 +25,7 @@ def menu():
         elif player == 1 and computer == 3:
             print("You chose: ✊","\nCPU chose: ✌️","\nThe player won!")
 
-        #if case for paper
+        #if statement for paper
         if player == 2 and computer == 2:
             print("You chose: ✋","\nCPU chose: ✋","\nIt is a draw!")
         elif player == 2 and computer == 3:
@@ -33,7 +33,7 @@ def menu():
         elif player == 2 and computer == 1:
             print("You chose: ✋","\nCPU chose: ✊","\nThe player won!")
 
-        #if case for scissor
+        #if statement for scissor
         if player == 3 and computer == 3:
             print("You chose: ✌️","\nCPU chose: ✌️","\nIt is a draw!")
         elif player == 3 and computer == 1:
@@ -42,7 +42,7 @@ def menu():
             print("You chose: ✌️","\nCPU chose: ✋","\nThe player won!")
 
         print("\nTry again?", "\n1)Yes","\n2)No")
-        #Made a While case here so everytime the input is not 1 or 2, a error message will appear
+        #Made a While loop here so everytime the input is not 1 or 2, a error message will appear
         while True:
             try:
                 play_again = int(input("Type: "))
